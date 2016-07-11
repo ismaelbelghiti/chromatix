@@ -1,0 +1,56 @@
+{
+    "manifest_version": 2,
+
+    "name": "Shortcuter",
+
+    "description": "Allows you to define custom shortcuts",
+
+    "version": "1.0",
+
+    "background": {
+	"scripts": ["jquery.js", "shortcuts.js", "script.js"],
+	"persistent": false
+    },
+
+    "commands": {
+	"shortcut-0": {
+	    "description": "Shortcut 0"
+	},
+	"shortcut-1": {
+	    "description": "Shortcut 1"
+	},
+	"shortcut-2": {
+	    "description": "Shortcut 2"
+	},
+	"shortcut-3": {
+	    "description": "Shortcut 3"
+	},
+	"shortcut-4": {
+	    "description": "Shortcut 4"
+	},
+	"shortcut-5": {
+	    "description": "Shortcut 5"
+	},
+	"shortcut-6": {
+	    "description": "Shortcut 6"
+	},
+	"shortcut-7": {
+	    "description": "Shortcut 7"
+	},
+	"shortcut-8": {
+	    "description": "Shortcut 8"
+	},
+	"shortcut-9": {
+	    "description": "Shortcut 9"
+	}
+    },
+
+    "permissions": [
+	"history",
+	"background",
+	"activeTab",
+	"https://ajax.googleapis.com/",
+	"tabs",
+	"<all_urls>"
+    ]
+}
