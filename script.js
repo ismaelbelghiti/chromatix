@@ -194,7 +194,6 @@ function createVirtualDOM(cb) {
 		    active : tab.active,
 		    windowId : tab.windowId,
 		    highlighted : tab.highlighted,
-		    windowId : window.id, // do not modify it
 		});
 	    }
 	}

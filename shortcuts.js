@@ -76,4 +76,20 @@ actions[5] = {
     }
 }
 
+actions[6] = {
+    // reverse the tabs
+    process: function(chromeDOM) {
+	chromeDOM.find("window[focused='true']").each(function() {
+	    var window = $(this);
+	    var tabs = [];
+	    window.find("tab").each(function() {
+		tabs.push($(this));
+		$(this).detach();
+	    });
+	    for (var iTab = tabs.length - 1; iTab >= 0; iTab--) {
+		window.append(tabs[iTab]);
+	    }
+	});
+    }
+}
 
